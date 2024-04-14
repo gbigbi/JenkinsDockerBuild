@@ -1,6 +1,5 @@
 node {
   def app 
-    stages {
       stage('Clone'){
         checkout scm 
         }
@@ -12,6 +11,5 @@ node {
         sh 'docker ps'
         sh 'curl localhost'
         }
-      }
     }
   }
